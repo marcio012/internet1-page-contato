@@ -3,8 +3,9 @@ import React from 'react'
 const Contato = props => {
 
   const grid = {
-    display: "grid",
-    gridTemplateColumns: "auto auto auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     color: "#002969"
   }
 
@@ -22,7 +23,7 @@ const Contato = props => {
   }
 
   const styleTop = {
-    marginTop: "48px"
+
   }
 
   const button = {
@@ -37,7 +38,11 @@ const Contato = props => {
 
   return (
 
-    <div className="w3-container w3-light-grey" style={paddingTypes} id="contact">
+    <div className="w3-container w3-light-grey"
+         style={{paddingTypes, marginBottom: "18px"}}
+         id="contact"
+      >
+
       <h3 className="w3-center" style={titulo}>CONTATO</h3>
       <p className="w3-center w3-large" style={titulo}>
         Olá, seja bem-vindo à Universidade de Fortaleza.
@@ -72,6 +77,7 @@ const Contato = props => {
         </form>
 
         <img src="https://www.unifor.br/documents/20143/518076/campus-unifor-17.06.2018-banner-cabecalho.jpg/760d4b6f-6236-29ae-efe5-c1d92d1fb100?t=1529086021982"
+             alt="foto-campus-unifor"
              className="w3-image w3-greyscale"
              style={altura} />
       </div>

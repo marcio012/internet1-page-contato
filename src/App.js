@@ -4,6 +4,7 @@ import Nav from './component/Nav'
 import Header from './component/Header'
 import Sobre from './component/Sobre'
 import Contato from './component/Contato'
+import Footer from './component/Footer'
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Header/>
         <Sobre/>
         <Contato/>
+        <Footer/>
       </div>
     );
   }

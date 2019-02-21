@@ -11,11 +11,10 @@ const Nav = props => {
   }
 
 
-
   return (
     <div className="w3-top" style={titulo}>
       <div className="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="#home" className="w3-bar-item w3-button w3-wide" style={titulo}>UNIFOR</a>
+        <a href="https://www.unifor.br/" className="w3-bar-item w3-button w3-wide" style={titulo}>UNIFOR</a>
         {/*Right-sided navbar links*/}
         <div className="w3-right w3-hide-small" style={titulo}>
           <a href="/" className="w3-bar-item w3-button">HISTORIA</a>

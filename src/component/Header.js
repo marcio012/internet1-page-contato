@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card'
 
 const Header = props => {
 
@@ -9,37 +10,81 @@ const Header = props => {
   }
 
   const padding2 = {
+    backgroundColor: "rgba(0, 41, 105, .9)",
     padding: '48px'
   }
+
 
   const bgimg1 = {
     backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundImage: `url("https://blog.123milhas.com/wp-content/uploads/2017/01/sc4r6mC-1024x680.jpg")`,
+    backgroundImage: `url("https://www.unifor.br/documents/20143/554520/1.+Campus+%28Desktop%29.jpg/24826674-6639-7f71-c6fc-a3b5f5a54d1f?t=1516049878295")`,
     minHeight: "100%",
     height: "100vh",
     backgroundColor: "black"
   }
 
-  const titulo = {
-    backgroundColor: "white",
-    color: "#002969"
-  }
-
-
   return (
     <div>
-      <header style={bgimg1} className="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-        <div className="w3-display-left w3-text-white" style={padding2}>
-          <span className="w3-jumbo w3-hide-small" style={titulo}>
-            Use sua nota do ENEM ou inscreva-se para a Prova
-          </span>
-          <p>
-            <a href="#about"
-               className="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">
-              Quero matricular
-            </a>
-          </p>
+      <header style={bgimg1}
+              className="bgimg-1 w3-display-container w3-grayscale-min"
+              id="home">
+        <div className="w3-display-right w3-text-white"
+             style={padding2}>
+
+          <Card bg="primary" text="white" style={{ width: '18rem' }}>
+            <Card.Header>
+              <h3>Conheça a Unifor</h3>
+              </Card.Header>
+            <Card.Body>
+
+              <Card.Text>
+                <ul className="lista">
+                  <li className="lista-unifor">
+                    <p><i class="fa fa-check"
+                          style={{marginRight: '10px', color: 'rgb(76, 255, 76)' }}/>
+                      Acessibilidade
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <i className="fa fa-check"
+                         style={{marginRight: '10px', color: 'rgb(76, 255, 76)' }}/>
+                      Biblioteca
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <i className="fa fa-check"
+                         style={{marginRight: '10px', color: 'rgb(76, 255, 76)' }}/>
+                      Guia do Campus
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <i className="fa fa-check"
+                         style={{marginRight: '10px', color: 'rgb(76, 255, 76)' }}/>
+                      Laboratório e Salas de Aula
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <i className="fa fa-check"
+                          style={{marginRight: '10px', color: 'rgb(76, 255, 76)' }}/>
+                      Núcles de Práticas Acadêmicas
+                    </p>
+                  </li>
+
+                </ul>
+
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
         </div>
         <div className="w3-display-bottomleft w3-text-blue w3-large">
           <i className="fa fa-facebook-official w3-hover-opacity" style={padding}/>

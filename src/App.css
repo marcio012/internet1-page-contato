@@ -1,3 +1,12 @@
 .App {
     color: #002969;
 }
+
+.lista {
+    list-style: none;
+    padding-left: .9em;
+}
+
+.lista-unifor {
+    margin-bottom: 1.25rem;
+}
